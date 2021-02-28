@@ -1,0 +1,90 @@
+.card-main {
+  height: 100vh;
+  position: relative;
+  background-color: $darkCyan;
+
+  .circle {
+    img {
+      &:nth-child(1) {
+        position: absolute;
+        top: -31.125rem;
+        left: -18rem;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        bottom: -39.25rem;
+        right: -16.125rem;
+      }
+    }
+  }
+
+  .card {
+    position: relative;
+    background-color: $white;
+    width: 21.875rem;
+    height: 23.4375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    overflow: hidden;
+    text-align: center;
+
+    &__bg {
+      height: 30%;
+      background-image: url('../../images/bg-pattern-card.svg');
+      background-size: contain;
+    }
+
+    .profile-photo {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 30%;
+      width: 6.25rem;
+      height: 6.25rem;
+      background-image: url('../../images/image-victor.jpg');
+      border-radius: 50%;
+      background-size: contain;
+      border: 5px solid $white;
+    }
+
+    .profile {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 55%;
+      line-height: 1.25rem;
+      text-align: center;
+      width: 100%;
+      &__name {
+        margin-top: 1.875rem;
+        font-size: $font-md;
+        font-weight: 700;
+      }
+      &__age {
+        margin-left: 1.25rem;
+        font-weight: 400;
+        color: $darkGray;
+      }
+      &__city {
+        margin-top: 1.25rem;
+        color: $darkGray;
+      }
+    }
+
+    .card-foot {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 5.625rem;
+      border-top: 1px solid $thinDarkGray;
+
+      .amount {
+        font-weight: 700;
+      }
+      .item {
+        color: $darkGray;
+      }
+    }
+  }
+}

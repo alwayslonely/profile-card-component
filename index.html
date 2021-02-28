@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/scss/style.scss">
+  <title>Frontend Mentor | Profile card component</title>
+
+</head>
+
+<body>
+  <main class="card-main flex flex-jc-c flex-ai-c">
+    <div class="circle">
+      <img src="images/bg-pattern-top.svg" alt="topCircle">
+      <img src="images/bg-pattern-bottom.svg" alt="bottomCircle">
+    </div>
+    <div class="card flex flex-fd-c">
+      <div class="card__bg"></div>
+
+      <div class="profile-photo"></div>
+      <div class="profile">
+        <h1 class="profile__name">Victor Crest<span class="profile__age">26</span></h1>
+        <p class="profile__city">London</p>
+      </div>
+      <div class="card-foot flex flex-jc-sa">
+        <div>
+          <p class="amount">80K</p>
+          <p class="item">Followers</p>
+        </div>
+        <div>
+          <p class="amount">803K</p>
+          <p class="item">Likes</p>
+        </div>
+        <div>
+          <p class="amount">1.4K</p>
+          <p class="item">Photos</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
